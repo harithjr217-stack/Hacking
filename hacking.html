@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Hacker UI Simulation</title>
+<style>
+    body {
+        margin: 0;
+        font-family: monospace;
+        background: black;
+        color: #00ff00;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .container {
+        border: 2px solid #00ff00;
+        padding: 20px;
+        width: 300px;
+        text-align: center;
+        box-shadow: 0 0 20px #00ff00;
+    }
+
+    h2 {
+        margin-bottom: 15px;
+        text-shadow: 0 0 10px #00ff00;
+    }
+
+    button {
+        width: 100%;
+        background: black;
+        color: #00ff00;
+        border: 1px solid #00ff00;
+        padding: 10px;
+        margin: 5px 0;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        background: #00ff00;
+        color: black;
+    }
+
+    .form {
+        display: none;
+        margin-top: 15px;
+    }
+
+    input {
+        width: 90%;
+        padding: 8px;
+        margin: 5px 0;
+        background: black;
+        border: 1px solid #00ff00;
+        color: #00ff00;
+    }
+
+    .note {
+        font-size: 10px;
+        margin-top: 10px;
+        opacity: 0.7;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>⚠ HACKING
+    
+  ⚠</h2>
+
+    <button onclick="openForm('Free Fire')">Hack Free Fire</button>
+    <button onclick="openForm('Mobile Legends')">Hack Mobile Legends</button>
+    <button onclick="openForm('PUBG Mobile')">Hack PUBG Mobile</button>
+    <button onclick="openForm('Roblox')">Hack Roblox</button>
+    <button onclick="openForm('Stumble Guys')">Hack Stumble Guys</button>
+    <button onclick="openForm('Facebook')">Hack Facebook</button>
+    <button onclick="openForm('Google')">Hack Google</button>
+
+    <div class="form" id="formBox">
+        <p id="title"></p>
+        <input type="text" placeholder="ID / Username / Email ">
+        <button onclick="alert('Ini hanya simulasi UI, bukan hack sebenar!')">
+            Submit
+        </button>
+    </div>
+
+    <div class="note">
+         ©  by izz
+    </div>
+</div>
+
+<script>
+function openForm(app) {
+    document.getElementById("formBox").style.display = "block";
+    document.getElementById("title").innerText = "Target: " + app;
+}
+</script>
+
+</body>
+</html>
